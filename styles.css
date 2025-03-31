@@ -84,15 +84,13 @@ nav ul li a:hover {
     padding: 5px 25px; /* interest button spacing */
     font-size: 19px;
     border-radius: 25px;
+    
     border: 2px solid rgb(37, 150, 190);
     cursor: pointer;
     transition: 0.25s;
 }
 
-.interest:hover {
-    background: rgb(121, 120, 120);
-    color: cyan;
-}
+
 
 .interest.selected {
     background: #81cbe0;
@@ -113,7 +111,7 @@ nav ul li a:hover {
     transition: 0.25s;
 }
 
-.continue-btn:hover {
+.continue-btn.selected {
     background-color: #81cbe0;
     color: black;
     box-shadow: 0px 0px 10px rgb(40, 185, 185);
@@ -169,11 +167,11 @@ body::before {
 /* Small mobile screens */
 @media screen and (max-width: 480px) {
     nav ul {
-        padding: 5px 10px;
+        padding: 5px 1px;
     }
     
     nav ul li a {
-        padding: 5px 8px;
+        padding: 5px 6px;
         font-size: 14px;
     }
     
@@ -182,7 +180,7 @@ body::before {
     }
     
     .interest {
-        padding: 5px 15px;
-        font-size: 16px;
+        padding: 5px 11px;
+        font-size: 14.5px;
     }
 }

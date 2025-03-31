@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+
+* {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 500;
+}
+
+
+
+body {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+/* Navigation Bar */
+header {
+    display: flex;
+    align-items: center;
+    padding: 15px 50px;
+    background: transparent; /* No background for full navbar */
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: cyan;
+    margin-right: 20px;
+}
+
+/* Navigation Menu Container */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 7px 15px;  /* Padding around buttons */
+    background: white;  /* White background for buttons */
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+
+nav ul li {
+    margin: 2px;/*nav button b/w spaces*/
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 6px 11px; /*space inside button | nav bar width*/
+    border-radius: 20px;
+    transition: background 0.4s ease, color 0.2s ease;
+}
+
+
+nav ul li a:hover {
+    background-color: rgb(0, 0, 0);
+    color: white ;
+}
+
+
+/*Heading height adjust*/
+.container {
+    margin-top: 30px; 
+    font-size: 22px;
+}
+
+
+
+
+.wifi-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+/* Row Spacing */
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Spacing between buttons */
+    margin-bottom: 25px; /* Space between rows */
+}
+
+
+
+/* Interest Buttons */
+.interest {
+    background: #222;
+    color: rgb(255, 255, 255);
+    padding: 5px 25px; /* interest button spacing */
+    font-size: 19px;
+    border-radius: 25px;
+    border: 2px solid rgb(37, 150, 190);
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.interest:hover {
+    background: rgb(121, 120, 120);
+    color: cyan;
+}
+
+.interest.selected {
+    background: #81cbe0;
+    color: black;
+    box-shadow: 0px 0px 10px rgb(40, 185, 185);
+}
+
+
+
+
+/* Continue Button */
+.continue-btn {
+    width: 120px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.continue-btn:hover {
+    background-color: #81cbe0;
+    color: black ;
+    box-shadow: 0px 0px 10px rgb(40, 185, 185);
+}
+
+body {
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    background-image: url('backgrounddd.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    z-index: -1; 
+}
+
+
+
